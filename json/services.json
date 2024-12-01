@@ -1,17 +1,33 @@
 [
     {
-      "name": "Beginner Training Program",
-      "description": "Tailored 5K training plans for beginners.",
-      "price": "Contact for pricing"
+      "name": "תוכנית למתחילים",
+      "description": "תוכנית מותאמת אישית להכנה לריצת 5 ק\"מ. מיועדת למתאמנים מתחילים שרוצים לשפר את הכושר.",
+      "price": "לפרטים נוספים, צרו קשר"
     },
     {
-      "name": "Advanced Running Program",
-      "description": "Improve your 10K and half-marathon times.",
-      "price": "Contact for pricing"
+      "name": "תוכנית למתקדמים",
+      "description": "תוכנית לשיפור תוצאות בריצת 10 ק\"מ וחצי מרתון. מיועדת למתאמנים עם ניסיון בסיסי בריצה.",
+      "price": "לפרטים נוספים, צרו קשר"
     },
     {
-      "name": "Marathon Prep",
-      "description": "Full guidance for marathon training.",
-      "price": "Contact for pricing"
+      "name": "הכנה למרתון",
+      "description": "ליווי מלא באימונים לקראת ריצת מרתון. כולל בניית תוכנית מותאמת אישית לכל שלב באימון.",
+      "price": "לפרטים נוספים, צרו קשר"
+    },
+    {
+      "name": "אימונים אישיים",
+      "description": "מפגשי אימון אישיים אחד על אחד לשיפור טכניקה, סיבולת ומהירות. מתאים לכל הרמות.",
+      "price": "לפרטים נוספים, צרו קשר"
+    },
+    {
+      "name": "ייעוץ תזונתי לספורטאים",
+      "description": "ייעוץ מקצועי לבניית תפריט מותאם לאורח חיים ספורטיבי, לשיפור ביצועים ושמירה על בריאות.",
+      "price": "לפרטים נוספים, צרו קשר"
+    },
+    {
+      "name": "שיקום לאחר פציעות",
+      "description": "תוכנית לשיקום והחזרת הכושר לאחר פציעות. כולל תרגילים מותאמים ותמיכה אישית.",
+      "price": "לפרטים נוספים, צרו קשר"
     }
-  ]  
+  ]
+  

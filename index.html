@@ -1,82 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tal Avidan - Professional Running Coach">
-  <meta name="author" content="Tal Avidan">
-  <title>Tal Avidan - Running Coach</title>
+  <meta name="description" content="טל אבידן - מאמן ריצה אישי עם תוכניות ריצה מותאמות אישית. הצטרפו עכשיו ושפרו את הכושר שלכם!">
+  <title>טל אבידן - מאמן ריצה אישי</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <!-- Header Section -->
-  <header class="hero">
+<body dir="rtl">
+
+    <!-- Navigation Bar -->
+<nav class="navbar">
     <div class="container">
-      <h1>Tal Avidan</h1>
-      <p>Achieve Your Personal Best with Tailored Running Programs</p>
-      <a href="#services" class="btn">Explore Services</a>
+      <a href="#home" class="logo">טל אבידן</a>
+      <button class="menu-toggle" id="mobile-menu">
+        ☰
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#services">שירותים</a></li>
+        <li><a href="#testimonials">המלצות</a></li>
+        <li><a href="#contact">צור קשר</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1>ברוכים הבאים לאתר של טל אבידן</h1>
+      <p>המסע שלכם לריצה טובה יותר מתחיל כאן</p>
+      <a href="#services" class="btn">לחקור שירותים</a>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Tal Avidan</h2>
-      <p>
-        With years of experience as a professional athlete and running coach, Tal Avidan helps runners of all levels achieve their goals. Whether you're preparing for your first 5K or training for a marathon, Tal provides expert guidance to unlock your potential.
-      </p>
-    </div>
-  </section>
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2>אודות טל אבידן</h2>
+    <p>
+      שלום לכולם, אני טל אבידן, בן 24 מאבן יהודה. אני מאמן ריצה אונליין וגם מבצע אימונים אישיים, וכמובן אתלט ורץ ארוכות בזמני הפנוי.
+    </p>
 
-  <!-- Services Section -->
-  <section id="services" class="section">
+    <h3>קצת עלי</h3>
+    <p>
+      מגיל ילדות תמיד הייתי שובב, מתרוצץ בין תחום אחד לאחר, ותמיד נגעתי בכל סוגי הספורט. בגיל 11 הייתי רץ בפרדסים כדי לתפוס את אחי הגדול – כנראה שאז התחילה האהבה שלי לריצה.
+    </p>
+
+    <p>
+      בכיתה ט' עברתי לפנימיית הדסה נעורים והתחלתי לעסוק בריצות ארוכות בצורה מקצועית. לקום מוקדם, לעבוד קשה ולרוץ עם הרצים הטובים בארץ – זו הייתה הרגשה עילאית עבורי.
+    </p>
+
+    <p>
+      אחרי שירות כלוחם, הכושר ירד אבל האהבה לריצה תמיד נשארה. פגשתי איש יקר בשם איציק עמרם, שאיתו הבנתי שהמקום שלי הוא בריצה – זה מה שעושה לי טוב וזה המקום הנכון לי.
+    </p>
+
+    <h3>הישגים אישיים</h3>
+    <ul>
+      <li>5 ק"מ: 15:13 דקות</li>
+      <li>10 ק"מ: 32:05 דקות</li>
+    </ul>
+
+    <h3>מסר לקוראים</h3>
+    <p>
+      תלכו עם הלב ואל תוותרו על החלומות שלכם לשנייה, כי אם לא עכשיו אז מתי? תודה שאתם כאן, על התמיכה, הפרגונים, והעידוד.
+    </p>
+
+    <p><strong>אוהב, טל ♥️</strong></p>
+  </div>
+</section>
+  
+<!-- Services Section -->
+<section id="services" class="services">
     <div class="container">
-      <h2>Services</h2>
-      <ul>
-        <li><strong>Beginner Training Program:</strong> Perfect for new runners starting their journey.</li>
-        <li><strong>Advanced Running Program:</strong> Improve your 10K and half-marathon times.</li>
-        <li><strong>Marathon Preparation:</strong> Comprehensive guidance for marathon success.</li>
-      </ul>
+      <h2>השירותים שלי</h2>
+      <div class="services-list">
+        <div class="service-item">
+          <h3>תוכנית למתחילים</h3>
+          <p>תוכנית מותאמת אישית להכנה לריצת 5 ק"מ. מיועדת למתאמנים מתחילים שרוצים לשפר את הכושר.</p>
+        </div>
+        <div class="service-item">
+          <h3>תוכנית למתקדמים</h3>
+          <p>תוכנית לשיפור תוצאות בריצת 10 ק"מ וחצי מרתון. מיועדת למתאמנים עם ניסיון בסיסי בריצה.</p>
+        </div>
+        <div class="service-item">
+          <h3>הכנה למרתון</h3>
+          <p>ליווי מלא באימונים לקראת ריצת מרתון. כולל בניית תוכנית מותאמת אישית לכל שלב באימון.</p>
+        </div>
+        <div class="service-item">
+          <h3>אימונים אישיים</h3>
+          <p>מפגשי אימון אישיים אחד על אחד לשיפור טכניקה, סיבולת ומהירות. מתאים לכל הרמות.</p>
+        </div>
+        <div class="service-item">
+          <h3>ייעוץ תזונתי לספורטאים</h3>
+          <p>ייעוץ מקצועי לבניית תפריט מותאם לאורח חיים ספורטיבי, לשיפור ביצועים ושמירה על בריאות.</p>
+        </div>
+        <div class="service-item">
+          <h3>שיקום לאחר פציעות</h3>
+          <p>תוכנית לשיקום והחזרת הכושר לאחר פציעות. כולל תרגילים מותאמים ותמיכה אישית.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn">צור קשר</a>
     </div>
   </section>
+  
+  
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="section">
+  <section id="testimonials" class="testimonials">
     <div class="container">
-      <h2>What Clients Say</h2>
+      <h2>מה הלקוחות שלי אומרים</h2>
       <blockquote>
-        "Tal's coaching transformed my running. I completed my first marathon under 4 hours!"
-        <cite>- Happy Client</cite>
+        <p>״בזכות טל הצלחתי לרוץ 10 ק"מ בפחות מ-50 דקות! מאמן מדהים.״</p>
+        <footer>- לקוח מרוצה</footer>
+      </blockquote>
+      <blockquote>
+        <p>״תוכנית האימון של טל שינתה לי את החיים. הוא מקצועי ותומך לאורך כל הדרך.״</p>
+        <footer>- מתאמנת מרוצה</footer>
       </blockquote>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact" class="contact">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Ready to start your running journey? Get in touch with Tal today!</p>
+      <h2>צור קשר</h2>
       <form action="#" method="post">
-        <label for="name">Name:</label>
+        <label for="name">שם מלא:</label>
         <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
+
+        <label for="email">אימייל:</label>
         <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
+
+        <label for="message">הודעה:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send</button>
+
+        <button type="submit" class="btn">שלח הודעה</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
+<!-- Footer -->
+<footer class="footer">
     <div class="container">
-      <p>&copy; 2024 Tal Avidan. All rights reserved.</p>
-      <ul class="social-links">
-        <li><a href="https://www.instagram.com/talavidan_runner/" target="_blank">Instagram</a></li>
-        <li><a href="https://strava.com" target="_blank">Strava</a></li>
-      </ul>
+      <p>© 2024 טל אבידן. כל הזכויות שמורות.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/talavidan_runner/" target="_blank" aria-label="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="icon">
+        </a>
+        <a href="https://www.strava.com/activities/11366014348" target="_blank" aria-label="Strava">
+          <img src="https://www.svgrepo.com/show/349518/strava.svg" alt="Strava" class="icon">
+        </a>
+        <a href="https://wa.link/2k6h8f" target="_blank" aria-label="WhatsApp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon">
+        </a>
+      </div>
+      <p>
+        עיצוב האתר על ידי 
+        <a href="https://fumez-wd.netlify.app/" target="_blank" aria-label="Fumez - Web Designs">פיומז - עיצובי אתרים</a>
+      </p>
     </div>
   </footer>
 
