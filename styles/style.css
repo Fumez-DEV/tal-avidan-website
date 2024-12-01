@@ -7,34 +7,35 @@ body {
     color: #333;
     background-color: #f8f9fa;
     text-align: center; /* Centers text content globally */
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
     padding: 0;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #007bff;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #0056b3;
-  }
-  
-  /* RTL Support */
-  body[dir="rtl"] {
+}
+
+/* RTL Support */
+body[dir="rtl"] {
     direction: rtl;
-  }
-  
-  .container {
+}
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* Navigation Bar */
+}  
+
+
+/* Navigation Bar */
 .navbar {
     background-color: #007bff; /* Primary blue */
     color: white;
@@ -45,224 +46,285 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     direction: rtl; /* RTL support */
-  }
-  
-  .navbar .container {
+}
+
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-  }
-  
-  .navbar .menu-toggle {
+}
+
+.navbar .logo-image {
+    height: 40px; /* Adjust the logo size */
+    width: 40px;
+    border-radius: 50%; /* Circular logo */
+    margin-left: 10px;
+}
+
+.navbar .menu-toggle {
     display: none;
     font-size: 1.5em;
     color: white;
     background: none;
     border: none;
     cursor: pointer;
-  }
-  
-  .navbar .nav-links {
+}
+
+.navbar .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  
-  .navbar .nav-links li {
+}
+
+.navbar .nav-links li {
     display: inline-block;
-  }
-  
-  .navbar .nav-links a {
+}
+
+.navbar .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s ease;
-  }
-  
-  .navbar .nav-links a:hover {
+}
+
+.navbar .nav-links a:hover {
     color: #ffc107; /* Accent yellow */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
     .navbar .menu-toggle {
-      display: block; /* Show toggle button */
+        display: block; /* Show toggle button */
     }
-  
+
     .navbar .nav-links {
-      display: none; /* Hide nav links by default */
-      flex-direction: column;
-      background-color: #007bff; /* Same color as navbar */
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      text-align: center;
-      padding: 20px 0;
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        background-color: #007bff; /* Same color as navbar */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
     }
-  
+
     .navbar .nav-links.active {
-      display: flex; /* Show nav links when active */
+        display: flex; /* Show nav links when active */
     }
-  
+
     .navbar .nav-links li {
-      margin: 10px 0;
+        margin: 10px 0;
     }
-  }
-  
+}
+
+    
 /* Hero Section Styling */
 .hero {
-    background: linear-gradient(to bottom, #1e90ff, #007bff); /* Blue gradient background */
+    background: linear-gradient(to bottom, #1e90ff, #007bff); /* Smooth blue gradient */
     color: white; /* Text color */
     text-align: center; /* Center align all content */
     padding: 100px 20px; /* Space around the content */
-    min-height: 400px; /* Minimum height for the hero section */
-    display: flex; /* Flexbox for centering */
+    min-height: 500px; /* Increased height for better visuals */
+    display: flex; /* Flexbox for alignment */
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    position: relative; /* For additional background elements if needed */
+    overflow: hidden; /* Prevent overflow of background elements */
   }
   
   .hero h1 {
-    font-size: 2.5em; /* Main heading size */
+    font-size: 3em; /* Larger heading */
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow for readability */
   }
   
   .hero p {
-    font-size: 1.2em; /* Subheading size */
+    font-size: 1.4em; /* Larger subheading */
     margin-bottom: 30px;
+    line-height: 1.6; /* Better readability */
   }
   
   .hero .btn {
-    background-color: #ffc107; /* Bright yellow for CTA button */
+    background-color: #ffc107; /* Bright yellow CTA button */
     color: #333; /* Dark text for contrast */
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 12px 30px;
+    font-size: 1.3em;
     font-weight: bold;
     text-transform: uppercase;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Slightly rounded corners */
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
   }
   
   .hero .btn:hover {
     background-color: #e0a800; /* Darker yellow on hover */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    transform: translateY(-3px) scale(1.05); /* Lift and enlarge effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  /* Background Effects */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; /* Circular highlight */
+    z-index: 1; /* Behind text */
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; /* Circular highlight */
+    z-index: 1; /* Behind text */
+  }
+  
+  /* Text Content Styling */
+  .hero h1,
+  .hero p,
+  .hero .btn {
+    position: relative;
+    z-index: 2; /* Above background effects */
   }
   
   /* Responsive Styling */
   @media (max-width: 768px) {
     .hero h1 {
-      font-size: 2em; /* Reduce heading size on smaller screens */
+      font-size: 2.2em; /* Reduce heading size for smaller screens */
     }
   
     .hero p {
-      font-size: 1em; /* Reduce subheading size on smaller screens */
+      font-size: 1.1em; /* Reduce subheading size */
     }
   
     .hero .btn {
-      font-size: 1em; /* Adjust button size */
-      padding: 8px 15px;
+      font-size: 1.1em; /* Adjust button size */
+      padding: 10px 20px;
     }
   }
-    
+  
+
 /* About Section Styling */
 .about {
-    background-color: #f8f9fa; /* Light gray for readability */
-    padding: 60px 20px;
-    line-height: 1.8;
+    background-color: #f8f9fa; /* Light gray background for readability */
+    padding: 80px 20px; /* Add spacing around the section */
     color: #333; /* Dark gray text */
-    text-align: right; /* RTL alignment */
     font-family: 'Rubik', sans-serif; /* Clean, modern font */
+    line-height: 1.8; /* Better line spacing for readability */
+    text-align: right; /* Align text for RTL */
   }
   
   .about .container {
-    max-width: 900px;
-    margin: 0 auto; /* Centers the content */
+    max-width: 1000px; /* Limit the width for focus */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    background: white; /* Add a white background for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   .about h2 {
-    font-size: 2.5em;
-    color: #007bff; /* Blue for the heading */
-    margin-bottom: 20px;
-    text-align: center; /* Center the main title */
+    font-size: 2.8em; /* Large heading size */
+    font-weight: bold; /* Make the heading bold */
+    color: #007bff; /* Bright blue color */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    text-transform: uppercase; /* Make all letters uppercase */
+    line-height: 1.4; /* Line spacing for better readability */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   .about h3 {
-    font-size: 1.8em;
-    color: #555; /* Subtle gray for subheadings */
-    margin-top: 20px;
-    margin-bottom: 15px;
+    font-size: 1.8em; /* Subheading size */
+    color: #555; /* Subtle gray color */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff; /* Add an underline for emphasis */
+    padding-bottom: 10px;
   }
   
   .about p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+    font-size: 1.2em; /* Increase paragraph size */
+    margin-bottom: 20px;
   }
   
   .about ul {
-    list-style: none; /* Removes default list styling */
+    list-style: none; /* Remove default list styling */
     padding: 0;
     margin: 20px 0;
   }
   
   .about ul li {
     font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #555;
+    margin-bottom: 15px;
+    color: #555; /* Subtle gray for list items */
+    position: relative; /* For custom bullet icon */
+    padding-right: 30px; /* Space for icon on RTL */
   }
   
-  .about p.important {
-    font-weight: bold;
-    color: #e63946; /* Highlight important text in red */
-  }
-  
-  .about p.emoji {
-    font-size: 1.5em;
-    margin: 20px 0;
-    text-align: center;
+  .about ul li::before {
+    content: '✔'; /* Checkmark icon for list items */
+    color: #007bff; /* Blue color for icon */
+    font-size: 1.2em;
+    position: absolute;
+    right: 0; /* Position icon on the right */
   }
   
   .about p.signature {
-    font-size: 1.2em;
+    font-size: 1.3em; /* Emphasize the signature */
     font-weight: bold;
     text-align: center;
-    color: #333;
-    margin-top: 30px;
+    color: #333; /* Dark gray text */
+    margin-top: 40px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
   
-  /* Back-to-Top Button Styling (Optional) */
-  .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* Hover effect for the signature */
+  .about p.signature:hover {
+    color: #007bff; /* Highlight the signature on hover */
+    transition: color 0.3s ease;
   }
   
-  .back-to-top:hover {
-    background-color: #0056b3;
-  }
-  
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2.2em; /* Adjust heading size for smaller screens */
+    }
+
+    .about h3 {
+        font-size: 1.5em; /* Adjust subheading size */
+    }
+
+    .about p, .about ul li {
+        font-size: 1em; /* Adjust paragraph and list item size */
+    }
+
+    .about .container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}  
   
 /* Services Section Styling */
 .services {
@@ -277,10 +339,15 @@ body {
   }
   
   .services h2 {
-    font-size: 2.8em;
-    color: #007bff;
-    text-align: center;
-    margin-bottom: 50px;
+    font-size: 2.8em; /* Large heading size */
+    font-weight: bold; /* Make the heading bold */
+    color: #007bff; /* Bright blue color */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    text-transform: uppercase; /* Make all letters uppercase */
+    line-height: 1.4; /* Line spacing for better readability */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   .services .services-list {
@@ -353,82 +420,168 @@ body {
     }
   }
   
-  /* Testimonials Section */
-  .testimonials {
-    background-color: #fff;
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff; /* White background for clean look */
     padding: 60px 20px;
   }
   
   .testimonials h2 {
-    font-size: 2em;
-    color: #007bff;
-    margin-bottom: 30px;
+    font-size: 2.8em; /* Large heading size */
+    font-weight: bold; /* Make the heading bold */
+    color: #007bff; /* Bright blue color */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+    text-transform: uppercase; /* Make all letters uppercase */
+    line-height: 1.4; /* Line spacing for better readability */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   .testimonials blockquote {
-    background-color: #f8f9fa;
-    border-left: 5px solid #007bff;
+    background-color: #f8f9fa; /* Light gray background */
+    border-left: 5px solid #007bff; /* Blue left border for emphasis */
     margin: 20px auto;
     padding: 20px;
     font-style: italic;
-    color: #555;
+    color: #555; /* Subtle gray text */
+    max-width: 800px; /* Limit width for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 5px; /* Rounded corners */
   }
   
   .testimonials blockquote footer {
     font-size: 0.9em;
-    color: #333;
+    color: #333; /* Darker gray for footer text */
     margin-top: 10px;
+    text-align: right; /* Align footer text to the right */
   }
   
-  /* Contact Section */
-  .contact {
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .testimonials {
+      padding: 40px 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .testimonials h2 {
+      font-size: 1.8em; /* Slightly smaller heading for mobile */
+    }
+  
+    .testimonials blockquote {
+      padding: 15px; /* Adjust padding for smaller screens */
+      font-size: 1em; /* Reduce font size for readability */
+    }
+  
+    .testimonials blockquote footer {
+      font-size: 0.85em; /* Slightly smaller footer text */
+    }
+  }
+    
+/* Contact Section */
+.contact {
     background-color: #f8f9fa;
     padding: 60px 20px;
-  }
-  
-  .contact h2 {
-    font-size: 2em;
+}
+
+.contact h2 {
+    font-size: 2.8em;
+    font-weight: bold;
     color: #007bff;
-    margin-bottom: 30px;
-  }
-  
-  .contact form {
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
     max-width: 600px;
     margin: 0 auto;
-    text-align: right; /* Align form labels for RTL */
-  }
-  
-  .contact label {
+    text-align: right;
+}
+
+.contact label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .contact input,
-  .contact textarea {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1em;
-  }
-  
-  .contact button {
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact button {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact button:hover {
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact button:hover {
     background-color: #0056b3;
-  }
-  
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 15px;
+    }
+
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .contact button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
+        
 
 /* WhatsApp Button Container */
 .whatsapp-container {
