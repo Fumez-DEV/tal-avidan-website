@@ -1,30 +1,28 @@
-I want to add a new piece of content with four locations for video reels from Tal Avidan's Instagram, but create a folder full of 28 video reels from Tal Avidan's Instagram that automatically rotate every 24 hours at 00:00, which should be enough for a whole week.
-
-https://www.instagram.com/reel/C9KDkXDsiUM/ !
-https://www.instagram.com/reel/DCl8UnWMKQ4/ !
-https://www.instagram.com/reel/DB8xoH7M5UV/ !
-https://www.instagram.com/reel/DBv1rvdoKGB/ !
-https://www.instagram.com/reel/DBI3BVtMVJz/ !
-https://www.instagram.com/reel/DA3hpytMUP5/ !
-https://www.instagram.com/reel/DAiwrOxMkYS/ !
-https://www.instagram.com/reel/DAYMplpMvzB/ !
-https://www.instagram.com/reel/DAQh3SpssQY/ !
-https://www.instagram.com/reel/C_7u_zFM9S0/ !
-https://www.instagram.com/reel/C_nTeSdsJC2/ !
-https://www.instagram.com/reel/C_c9bUDs_ta/ !
-https://www.instagram.com/reel/C_VQiwbMNBq/ !
-https://www.instagram.com/reel/C_QTzR-sRv2/ !
-https://www.instagram.com/reel/C_K8p0aMkIV/ !
-https://www.instagram.com/reel/C-2VIYoMrxo/ !
-https://www.instagram.com/reel/C-fRe8hyppA/ !
-https://www.instagram.com/reel/C-XZhgrSn-3/ !
-https://www.instagram.com/reel/C-KUm4dp53_/ !
-https://www.instagram.com/reel/C-AbKBoyEiu/ !
-https://www.instagram.com/reel/C9zf9kdMSAH/ !
-https://www.instagram.com/reel/C9mb7i2sIwr/ !
-https://www.instagram.com/reel/C9PSbQWsbrY/ !
-https://www.instagram.com/reel/C8rP96UoZdh/ !
-https://www.instagram.com/reel/C8l7JpQsF8O/ !
-https://www.instagram.com/reel/C8eLuLgs5u5/ !
-https://www.instagram.com/reel/C60kNLxM5YL/ !
-https://www.instagram.com/reel/C6qQxCwMA1b/ !
+https://www.instagram.com/reel/C9KDkXDsiUM/ 
+https://www.instagram.com/reel/DCl8UnWMKQ4/ 
+https://www.instagram.com/reel/DB8xoH7M5UV/ 
+https://www.instagram.com/reel/DBv1rvdoKGB/ 
+https://www.instagram.com/reel/DBI3BVtMVJz/ 
+https://www.instagram.com/reel/DA3hpytMUP5/ 
+https://www.instagram.com/reel/DAiwrOxMkYS/ 
+https://www.instagram.com/reel/DAYMplpMvzB/ 
+https://www.instagram.com/reel/DAQh3SpssQY/ 
+https://www.instagram.com/reel/C_7u_zFM9S0/ 
+https://www.instagram.com/reel/C_nTeSdsJC2/ 
+https://www.instagram.com/reel/C_c9bUDs_ta/ 
+https://www.instagram.com/reel/C_VQiwbMNBq/ 
+https://www.instagram.com/reel/C_QTzR-sRv2/ 
+https://www.instagram.com/reel/C_K8p0aMkIV/ 
+https://www.instagram.com/reel/C-2VIYoMrxo/ 
+https://www.instagram.com/reel/C-fRe8hyppA/ 
+https://www.instagram.com/reel/C-XZhgrSn-3/ 
+https://www.instagram.com/reel/C-KUm4dp53_/ 
+https://www.instagram.com/reel/C-AbKBoyEiu/ 
+https://www.instagram.com/reel/C9zf9kdMSAH/ 
+https://www.instagram.com/reel/C9mb7i2sIwr/ 
+https://www.instagram.com/reel/C9PSbQWsbrY/ 
+https://www.instagram.com/reel/C8rP96UoZdh/ 
+https://www.instagram.com/reel/C8l7JpQsF8O/ 
+https://www.instagram.com/reel/C8eLuLgs5u5/ 
+https://www.instagram.com/reel/C60kNLxM5YL/ 
+https://www.instagram.com/reel/C6qQxCwMA1b/ 
