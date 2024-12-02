@@ -891,39 +891,41 @@ body[dir="rtl"] {
 .footer {
   background-color: #343a40; /* Dark gray background */
   color: white; /* White text color */
-  padding: 20px 0;
-  text-align: center; /* Center all text */
-  font-family: 'Rubik', sans-serif; /* Clean modern font */
+  padding: 20px 0; /* Padding for spacing */
+  text-align: center; /* Center-align text */
+  font-family: 'Rubik', sans-serif; /* Modern font */
+  position: relative; /* Ensures proper positioning */
 }
 
 .footer p {
-  margin: 10px 0;
+  margin: 10px 0; /* Add vertical spacing */
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.6; /* Improve readability */
 }
 
 .footer .social-links {
-  margin-top: 10px;
+  margin-top: 15px; /* Add space above icons */
   display: flex;
   justify-content: center;
-  gap: 15px; /* Even spacing between icons */
+  gap: 20px; /* Spacing between icons */
   flex-wrap: wrap; /* Wrap icons on smaller screens */
 }
 
 .footer .social-links a {
   display: inline-block;
   text-align: center; /* Center-align each icon */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
 }
 
 .footer .icon {
   width: 32px; /* Icon size */
   height: 32px;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Hover animation */
 }
 
 .footer .icon:hover {
-  transform: scale(1.2); /* Enlarge icon slightly on hover */
-  opacity: 0.8; /* Add a fading effect on hover */
+  transform: scale(1.2); /* Enlarge on hover */
+  opacity: 0.8; /* Slight fade effect */
 }
 
 .footer a {
@@ -935,100 +937,162 @@ body[dir="rtl"] {
 
 .footer a:hover {
   color: #e0a800; /* Darker yellow on hover */
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; /* Add underline */
 }
 
-/* Container */
-.container {
-  max-width: 1200px; /* Set a max width for the footer */
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 0 20px; /* Add padding to the sides */
+/* "Back to Top" Button */
+.footer .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .back-to-top:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: translateY(-3px); /* Lift effect */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer {
-      padding: 15px 10px; /* Reduce padding for smaller screens */
+    padding: 15px 10px; /* Reduce padding */
   }
 
   .footer p {
-      font-size: 0.9em; /* Reduce font size for smaller screens */
-      margin: 5px 0; /* Reduce margins for tighter spacing */
+    font-size: 0.9em; /* Reduce font size */
+    margin: 5px 0;
   }
 
   .footer .social-links {
-      gap: 10px; /* Reduce spacing between icons */
-      flex-wrap: wrap; /* Ensure icons wrap neatly */
+    gap: 15px; /* Reduce gap */
   }
 
   .footer .icon {
-      width: 28px; /* Adjust icon size */
-      height: 28px;
+    width: 28px;
+    height: 28px; /* Adjust icon size */
   }
 
   .footer a {
-      font-size: 0.9em; /* Slightly reduce text size */
+    font-size: 0.9em; /* Adjust link size */
+  }
+
+  .footer .back-to-top {
+    width: 40px;
+    height: 40px; /* Adjust button size */
+    font-size: 1.2em;
   }
 }
 
 @media (max-width: 480px) {
   .footer p {
-      font-size: 0.85em; /* Further reduce font size */
+    font-size: 0.85em; /* Further reduce text size */
   }
 
   .footer .social-links {
-      gap: 8px; /* Reduce spacing further for extra-small screens */
+    gap: 10px; /* Reduce spacing for small screens */
   }
 
   .footer .icon {
-      width: 24px; /* Smaller icon size for very small screens */
-      height: 24px;
+    width: 24px;
+    height: 24px; /* Smaller icons */
   }
 
   .footer a {
-      font-size: 0.8em; /* Reduce text size further */
+    font-size: 0.8em; /* Smaller link size */
+  }
+
+  .footer .back-to-top {
+    width: 35px;
+    height: 35px; /* Adjust button size */
+    font-size: 1em; /* Smaller font */
   }
 }
 
-  /* Extra Small Devices (max-width: 480px) */
-@media (max-width: 480px) {
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .menu-toggle {
+    display: block;
+  }
+
   .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0056b3;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    text-align: center;
     padding: 10px 0;
-    font-size: 0.9em; /* Smaller font size */
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
   }
 
   .hero h1 {
-    font-size: 1.8em; /* Reduced heading size */
+    font-size: 2em;
   }
 
   .hero p {
-    font-size: 0.9em; /* Smaller subheading */
+    font-size: 1em;
   }
 
-  .about h2 {
-    font-family: 'Alef', sans-serif;    font-family: 'Alef', sans-serif;    font-size: 2em;
-  }
-
-  .services .service-item {
-    padding: 15px;
+  .hero .btn {
     font-size: 0.9em;
   }
 
-  .reels-section h2 {
-    font-family: 'Alef', sans-serif;    font-family: 'Alef', sans-serif;    font-size: 1.8em;
-    margin-bottom: 10px;
+  .contact h2 {
+    font-size: 1.8em;
+  }
+
+  .contact input, .contact textarea {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .hero .btn {
+    font-size: 0.8em;
   }
 
   .contact h2 {
-    font-family: 'Alef', sans-serif;    font-family: 'Alef', sans-serif;    font-size: 2em;
+    font-size: 1.5em;
   }
 
-  .footer p {
-    font-size: 0.85em;
+  .contact input, .contact textarea {
+    font-size: 0.8em;
+    padding: 6px;
   }
 
-  .whatsapp-button {
-    width: 45px;
-    height: 45px;
+  footer {
+    font-size: 0.7em;
   }
 }
