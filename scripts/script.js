@@ -69,24 +69,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
   
 
-// Mobile Menu Toggle
-const mobileMenu = document.getElementById('mobile-menu');
-const navLinks = document.getElementById('nav-links');
-
-mobileMenu.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  document.getElementById('mobile-menu').addEventListener('click', function () {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   const reels = document.querySelectorAll(".reel");
 
-  // Dynamic loading of reels (as in the previous step)
+  // Function to get the current day in GMT+2
+  function getDayOfYearGMT2() {
+    const now = new Date();
+    // Adjust time to GMT+2
+    const gmt2Offset = 2; // Hours offset for GMT+2
+    const localTime = now.getTime();
+    const localOffset = now.getTimezoneOffset() * 60 * 1000; // Convert offset to milliseconds
+    const gmt2Time = localTime + localOffset + gmt2Offset * 60 * 60 * 1000;
+    const gmt2Date = new Date(gmt2Time);
+
+    // Calculate the day of the year for GMT+2
+    const startOfYear = new Date(gmt2Date.getFullYear(), 0, 0);
+    const diff = gmt2Date - startOfYear + (startOfYear.getTimezoneOffset() * 60 * 1000);
+    return Math.floor(diff / (1000 * 60 * 60 * 24));
+  }
+
+  // Dynamic loading of reels
   const totalReels = 28; // Total number of reels
   const reelsPerDay = 4; // Number of reels to display daily
-  const today = new Date();
-  const dayOfYear = Math.floor(
-    (today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24
-  );
+  const dayOfYear = getDayOfYearGMT2(); // Get the current day in GMT+2
   const startIndex = (dayOfYear * reelsPerDay) % totalReels;
 
   reels.forEach((video, index) => {
