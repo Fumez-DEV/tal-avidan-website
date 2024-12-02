@@ -683,8 +683,8 @@ body[dir="rtl"] {
 }
 
 .contact button {
-  background-color: #007bff;
-  color: white;
+  background-color: #0056b3; /* Darker background for better contrast */
+  color: #ffffff; /* Ensure white text for readability */
   padding: 15px 25px;
   border: none;
   border-radius: 8px;
@@ -695,7 +695,7 @@ body[dir="rtl"] {
 }
 
 .contact button:hover {
-  background-color: #0056b3;
+  background-color: #003f7f; /* Even darker background on hover */
   transform: translateY(-3px);
 }
 
