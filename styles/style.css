@@ -782,6 +782,38 @@ body[dir="rtl"] {
   }
 }    
 
+/* Responsive Design for Extra Small Screens */
+@media (max-width: 480px) {
+  .contact {
+    padding: 30px 10px; /* Reduce padding for very small screens */
+  }
+
+  .contact h2 {
+    font-size: 1.8em; /* Further reduce heading size */
+    line-height: 1.2; /* Optimize line spacing for compact screens */
+  }
+
+  .contact form {
+    padding: 0 10px; /* Add slight padding to ensure elements don't touch screen edges */
+  }
+
+  .contact label {
+    font-size: 1em; /* Adjust label font size */
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 0.85em; /* Reduce input font size */
+    padding: 8px; /* Compact padding for smaller screen usability */
+  }
+
+  .contact button {
+    font-size: 0.9em; /* Reduce button text size */
+    padding: 8px 15px; /* Compact button padding */
+    border-radius: 5px; /* Slightly reduce the button's corner radius */
+  }
+}
+
 /* WhatsApp Button Container */
 .whatsapp-container {
     position: fixed;
