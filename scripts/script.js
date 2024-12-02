@@ -77,3 +77,31 @@ mobileMenu.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const reels = document.querySelectorAll(".reel");
+
+  // Dynamic loading of reels (as in the previous step)
+  const totalReels = 28; // Total number of reels
+  const reelsPerDay = 4; // Number of reels to display daily
+  const today = new Date();
+  const dayOfYear = Math.floor(
+    (today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24
+  );
+  const startIndex = (dayOfYear * reelsPerDay) % totalReels;
+
+  reels.forEach((video, index) => {
+    const reelIndex = (startIndex + index) % totalReels + 1;
+    video.src = `reels/reels${reelIndex}.mp4`;
+
+    // Add hover event listeners for play/unmute and pause/mute
+    video.addEventListener("mouseenter", function () {
+      video.play();
+      video.muted = false;
+    });
+
+    video.addEventListener("mouseleave", function () {
+      video.pause();
+      video.muted = true;
+    });
+  });
+});

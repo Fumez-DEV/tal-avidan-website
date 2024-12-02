@@ -420,6 +420,37 @@ body[dir="rtl"] {
     }
   }
   
+  /* Reels Section */
+.reels-section {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reels-section h2 {
+  font-size: 2.5em;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.reel {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.reel:hover {
+  transform: scale(1.05);
+}
+
+
 /* Testimonials Section */
 .testimonials {
     background-color: #fff; /* White background for clean look */
